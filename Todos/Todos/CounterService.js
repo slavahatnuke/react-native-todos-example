@@ -1,4 +1,4 @@
-export default class Counter {
+export default class CounterService {
     constructor() {
         this.counter = 0;
     }
@@ -21,7 +21,7 @@ export default class Counter {
             clearInterval(this.interval);
             this.interval = null;
         } else {
-            this.interval = setInterval(() => this.up(), 500);
+            this.interval = setInterval(() => this.up(), 100);
         }
     }
 }

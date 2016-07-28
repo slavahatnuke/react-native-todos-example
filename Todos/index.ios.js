@@ -1,13 +1,14 @@
 import React from 'react';
 import {AppRegistry, StyleSheet} from 'react-native';
-import box from './Todos/box';
+import box from './ios/actives/box';
 
 import {View} from 'react-native';
 
 let TodosApp = () => {
     return (
         <View style={styles.app}>
-            <box.CounterView/>
+            <box.Counter/>
+            <box.TodoList/>
         </View>
     );
 };
