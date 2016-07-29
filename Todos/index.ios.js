@@ -1,6 +1,6 @@
 import React from 'react';
 import {AppRegistry, StyleSheet} from 'react-native';
-import box from './ios/actives/box';
+import box from './ios/views/box';
 
 import {View} from 'react-native';
 

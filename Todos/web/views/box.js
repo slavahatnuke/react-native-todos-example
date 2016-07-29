@@ -1,4 +1,4 @@
-import box from '../Todos/box';
+import box from '../../Todos/box';
 import connect from 'actives-react';
 
 import Counter from './Counter';
