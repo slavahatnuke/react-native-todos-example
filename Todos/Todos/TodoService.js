@@ -1,10 +1,13 @@
 export default class TodoService {
     constructor() {
-        this.todos = [{
-            id: 1,
-            title: 1,
-            status: false
-        }];
+        // this.todos = [{
+        //     id: 1,
+        //     title: 1,
+        //     status: false
+        // }];
+
+        this.todos = [];
+
         this.todo = null;
         this.nextId = 1;
     }
@@ -14,11 +17,13 @@ export default class TodoService {
     }
 
     save(todo) {
-        if(todo.id) {
+        if (todo.id) {
             // nothing
         } else {
             todo.id = this.nextId++;
+            todo.title = 'todo-' + todo.id;
             this.add(todo);
+            this.todo = null;
         }
     }
 
@@ -37,8 +42,6 @@ export default class TodoService {
 
     toggle(id) {
         let todo = this.get(id);
-        console.log('toggle', id, todo);
-
         todo.status = !todo.status;
     }
 

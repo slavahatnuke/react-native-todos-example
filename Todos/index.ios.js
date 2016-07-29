@@ -8,7 +8,7 @@ let TodosApp = () => {
     return (
         <View style={styles.app}>
             <box.Counter/>
-            <box.TodoList/>
+            <box.TodoApp/>
         </View>
     );
 };
