@@ -42,7 +42,9 @@ export default class TodoService {
 
     toggle(id) {
         let todo = this.get(id);
-        todo.status = !todo.status;
+        if(todo) {
+            todo.status = !todo.status;
+        }
     }
 
     get(id) {

@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "actives": "0.0.11",
-    "actives-react": "0.0.8",
+    "actives-react": "0.0.9",
     "react": "15.2.1",
     "react-native": "0.30.0"
   }
