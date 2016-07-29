@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "start.web": "webpack-dev-server --config web/webpack.config.js --hot"
+    "web": "webpack-dev-server --config web/webpack.config.js --hot",
+    "ios": "react-native run-ios",
+    "ios.logs": "react-native log-ios"
   },
   "dependencies": {
     "actives": "0.0.11",

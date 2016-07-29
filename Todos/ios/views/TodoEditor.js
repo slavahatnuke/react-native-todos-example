@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import {View, Text, TouchableHighlight, TextInput} from 'react-native';
 
 export default () => class TodoEditor extends Component {
-    constructor({todo = {}, onSave = () => null}) {
-        super({todo});
+    constructor(props) {
+        super(props);
+        let {todo = {}, onSave = () => null} = props;
         this.state = {todo, onSave, edit: Object.assign({}, todo)};
     }
 
