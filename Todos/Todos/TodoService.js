@@ -1,11 +1,5 @@
 export default class TodoService {
     constructor() {
-        // this.todos = [{
-        //     id: 1,
-        //     title: 1,
-        //     status: false
-        // }];
-
         this.todos = [];
 
         this.todo = null;
@@ -21,7 +15,6 @@ export default class TodoService {
             // nothing
         } else {
             todo.id = this.nextId++;
-            todo.title = 'todo-' + todo.id;
             this.add(todo);
             this.todo = null;
         }
