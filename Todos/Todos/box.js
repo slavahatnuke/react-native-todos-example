@@ -52,7 +52,4 @@ box.connect('TodoState', 'TodoService')
         }
     });
 
-
-console.log('box.TodoState', box.TodoState);
-
 export default box;
